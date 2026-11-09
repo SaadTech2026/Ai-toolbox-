@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A simple guide to useful AI tools for writing, design, learning and productivity.">
+  <title>AI ToolBox — Discover useful AI tools</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">AI<span>ToolBox</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#tools">Tools</a>
+      <a href="#guides">Guides</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">A beginner-friendly AI directory</p>
+      <h1>Find the right AI tool<br><span>for your next idea.</span></h1>
+      <p class="hero-copy">Explore tools for writing, design, study and everyday productivity. Read what each tool does before visiting its official website.</p>
+      <a class="primary-button" href="#tools">Explore tools</a>
+    </section>
+
+    <section class="content-section" id="tools">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Explore</p>
+          <h2>AI tools directory</h2>
+        </div>
+        <input id="searchInput" type="search" placeholder="Search tools..." aria-label="Search tools">
+      </div>
+      <div class="filters" aria-label="Filter tools">
+        <button class="filter-button active" data-category="all">All</button>
+        <button class="filter-button" data-category="writing">Writing</button>
+        <button class="filter-button" data-category="design">Design</button>
+        <button class="filter-button" data-category="learning">Learning</button>
+      </div>
+      <div class="tool-grid" id="toolGrid">
+        <article class="tool-card" data-category="writing" data-search="chatgpt writing brainstorming explanations">
+          <div class="tool-icon">✍️</div><p class="tag">Writing & ideas</p>
+          <h3>ChatGPT</h3>
+          <p>An AI assistant for brainstorming, explanations, drafting and learning.</p>
+          <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Visit official website ↗</a>
+        </article>
+        <article class="tool-card" data-category="writing" data-search="gemini research writing google assistant">
+          <div class="tool-icon">✨</div><p class="tag">Writing & research</p>
+          <h3>Google Gemini</h3>
+          <p>An AI assistant that can help explore ideas, understand topics and work with information.</p>
+          <a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer">Visit official website ↗</a>
+        </article>
+        <article class="tool-card" data-category="design" data-search="canva design presentations graphics">
+          <div class="tool-icon">🎨</div><p class="tag">Design</p>
+          <h3>Canva</h3>
+          <p>A design platform for presentations, graphics, posters and social media content.</p>
+          <a href="https://www.canva.com/" target="_blank" rel="noopener noreferrer">Visit official website ↗</a>
+        </article>
+        <article class="tool-card" data-category="learning" data-search="khan academy learning education">
+          <div class="tool-icon">📚</div><p class="tag">Learning</p>
+          <h3>Khan Academy</h3>
+          <p>Free learning resources and lessons across a range of school and university subjects.</p>
+          <a href="https://www.khanacademy.org/" target="_blank" rel="noopener noreferrer">Visit official website ↗</a>
+        </article>
+      </div>
+      <p id="emptyMessage" class="empty-message" hidden>No matching tools found. Try another search.</p>
+    </section>
+
+    <section class="content-section guide-section" id="guides">
+      <p class="eyebrow">Learn before you choose</p>
+      <h2>How to choose an AI tool</h2>
+      <div class="guide-grid">
+        <article><h3>1. Know your task</h3><p>Decide whether you need help with writing, design, research or studying.</p></article>
+        <article><h3>2. Check the limits</h3><p>Review free-plan limits, privacy information and supported features on the official site.</p></article>
+        <article><h3>3. Verify the result</h3><p>AI can make mistakes. Check important facts and never share passwords or private information.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 AI ToolBox. Independent educational directory.</p>
+    <div><a href="privacy.html">Privacy Policy</a><a href="disclaimer.html">Disclaimer</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
